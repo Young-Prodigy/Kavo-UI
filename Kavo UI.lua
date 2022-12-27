@@ -1,3 +1,5 @@
+
+local Kavo = {}
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -16,8 +18,6 @@ for useless, garbage in next,getgc() do
        end
    end
 end
-local Kavo = {}
-
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
 local input = game:GetService("UserInputService")
